@@ -29,7 +29,7 @@ Skill: Data Filtering (WHERE clause).
 2. Longitudinal Patient Tracking (Window Functions)
 Problem: Compare a patient's initial nutritional score against their follow-up visit on a single row to measure improvement.
 
-Skill: Advanced Window Functions (LEAD()).
+**Skill**: Advanced Window Functions (LEAD()).
 
 SQL
 SELECT patient_id, assessment_date, mdd_score,
