@@ -1,12 +1,10 @@
-# community-health-sql-analysis
-Relational database design and SQL analytics for pediatric nutritional data.
-📊 Community Health & Nutritional Analytics (SQL)
-📋 Project Overview
+# Community Health & Nutritional Analytics (SQL)
+## Project Overview
 This project demonstrates the design and analysis of a relational database focused on Public Health and Pediatric Nutrition. Using a real-world scenario—tracking child health metrics at local dispensaries—I built a schema to manage patient demographics, facility locations, and longitudinal nutritional assessments (MDD scores).
 
 The goal of this project was to move beyond basic CRUD operations and perform complex analytical queries that could assist health administrators in identifying at-risk populations and tracking patient improvement over time.
 
-🏗️ Database Architecture
+## Database Architecture
 The database consists of three primary tables:
 
 facilities: Information on healthcare centers, regions, and service types.
@@ -15,12 +13,12 @@ patients: Demographic data for children, linked to their primary facility.
 
 nutrition_assessments: Health metrics including weight, height, and Minimum Dietary Diversity (MDD) scores.
 
-Key Technical Features:
+**Key Technical Features**:
 Relational Integrity: Utilized Primary and Foreign Keys to ensure data consistency.
 
-Data Validation: Implemented CHECK constraints to ensure MDD scores remain within the valid range (0–8).
+**Data Validation**: Implemented CHECK constraints to ensure MDD scores remain within the valid range (0–8).
 
-🔍 Featured Queries & Analysis
+## Featured Queries & Analysis
 In this project, I solved several complex data challenges:
 
 1. Identifying Nutritional Risk
