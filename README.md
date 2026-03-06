@@ -24,18 +24,19 @@ In this project, I solved several complex data challenges:
 1. Identifying Nutritional Risk
 Problem: Flag all children with an MDD score below the critical threshold of 4.
 
-Skill: Data Filtering (WHERE clause).
+**Skill**: Data Filtering (WHERE clause).
 
 2. Longitudinal Patient Tracking (Window Functions)
 Problem: Compare a patient's initial nutritional score against their follow-up visit on a single row to measure improvement.
 
 **Skill**: Advanced Window Functions (LEAD()).
 
-SQL
+```sql
 SELECT patient_id, assessment_date, mdd_score,
 LEAD(mdd_score, 1, 0) OVER(ORDER BY assessment_date) AS next_mdd_score
 FROM nutrition_assessments
 WHERE patient_id = 101;
+```
 3. Facility Performance Benchmarking
 Problem: Calculate the average MDD score for every facility to identify regions needing more resource allocation.
 
@@ -46,14 +47,14 @@ Problem: Calculate the exact age of a patient (years/months/days) at the specifi
 
 Skill: PostgreSQL AGE() function and Interval handling.
 
-🛠️ Tools Used
-Database: PostgreSQL 18
+## Tools Used
+**Database**: PostgreSQL 18
 
-Interface: psql Command Line / pgAdmin
+**Interface**: psql Command Line / pgAdmin
 
-Language: SQL
+**Language**: SQL
 
-💡 Key Insights Generated
+## Key Insights Generated
 Identified that GSU Kibra Dispensary currently manages the highest volume of pediatric patients.
 
 Successfully tracked a 16% improvement in dietary diversity for specific patients between January and March 2026.
